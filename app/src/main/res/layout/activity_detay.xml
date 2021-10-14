@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrunEkleActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewUrunResim"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+        app:srcCompat="@drawable/macbook" />
+
+    <Button
+        android:id="@+id/buttonTamam"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Tamam"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFiyat" />
+
+    <TextView
+        android:id="@+id/textViewAd"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Adı : Macbook Pro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewKategori"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUrunResim" />
+
+    <TextView
+        android:id="@+id/textViewKategori"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Kategori : Bilgisayarlar "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAciklama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAd" />
+
+    <TextView
+        android:id="@+id/textViewAciklama"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Açıklama : "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTarih"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKategori" />
+
+    <TextView
+        android:id="@+id/textViewTarih"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Tarih : 13.10.2021"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFiyat"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAciklama"
+        tools:layout_editor_absoluteX="81dp" />
+
+    <TextView
+        android:id="@+id/textViewFiyat"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Fiyat : 18.000 tl"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTamam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTarih" />
+</androidx.constraintlayout.widget.ConstraintLayout>

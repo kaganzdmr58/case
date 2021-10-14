@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "407084375943",
+    "project_id": "mobirollerodev",
+    "storage_bucket": "mobirollerodev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407084375943:android:bd98e45abce535ca733d22",
+        "android_client_info": {
+          "package_name": "com.cbagames.mobiroller_proje_odev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407084375943-glgtn6rgmtlcvaufos5mki8as8c5mkik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf1-nWbLD4pxPlJ9YRrs828hJEwdert44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407084375943-glgtn6rgmtlcvaufos5mki8as8c5mkik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
